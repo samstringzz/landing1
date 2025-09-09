@@ -1,0 +1,26 @@
+/* Styles for navbar on large screens */
+@media (min-width: 992px) {
+  .navbar.hide-lg .navbar-collapse,
+  .navbar.hide-lg .navbar-toggler {
+    display: none !important;
+  }
+  
+  .navbar.hide-lg {
+    padding: 20px 0;
+  }
+  
+  .navbar.hide-lg .logo {
+    display: block;
+  }
+  
+  .navbar.hide-lg .logo-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .navbar.hide-lg .container {
+    display: flex;
+    justify-content: center;
+  }
+}

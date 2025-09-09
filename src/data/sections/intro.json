@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": {
+      "first": "Hi, I'm",
+      "second": "Alika Maya"
+    },
+    "content": "Empowering Lives Through Style & Inspiration",
+    "image": "/img/slid/1.jpg"
+  },
+  {
+    "id": 2,
+    "title": {
+      "first": "Creating",
+      "second": "Digital Excellence"
+    },
+    "content": "Turning your vision into reality through creative excellence and strategic innovation",
+    "image": "/img/slid/2.jpg"
+  },
+  {
+    "id": 3,
+    "title": {
+      "first": "Inspiring",
+      "second": "Brand Stories"
+    },
+    "content": "Building meaningful connections through authentic brand experiences",
+    "image": "/img/slid/3.jpg"
+  }
+]
