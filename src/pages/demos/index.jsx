@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Link from "next/link";
-import "../../styles/demos.css";
+import styles from "../../styles/demos.module.css";
 import Split from "../../components/Split";
 import DarkTheme from "../../layouts/Dark";
 import addParlx from "../../common/addParlx";
@@ -70,7 +70,7 @@ const Demos = () => {
         </div>
       </header>
       <div className="main-content" ref={MainContent}>
-        <section className="masonery section-padding sub-bg">
+        <section className={`${styles.masonery} section-padding sub-bg`}>
           <div className="container-fluid">
             <div className="sec-head custom-font text-center">
               <Split>
@@ -285,7 +285,7 @@ const Demos = () => {
         </section>
 
         <section
-          className="masonery section-padding pb-70"
+          className={`${styles.masonery} section-padding pb-70`}
           style={{ background: "#181b21" }}
         >
           <div className="container-fluid">

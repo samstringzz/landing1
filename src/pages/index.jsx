@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import LightTheme from "../layouts/Light";
 import Navbar from "../components/Navbar";
 import IntroWithSlider from "../components/Intro-with-slider1";
@@ -71,7 +72,7 @@ const Home = () => {
                   <div className="item-img wow fadeInUp" data-wow-delay=".4s">
                     <Link href="/project-details/project-details-dark" passHref>
                       <a className="img-link">
-                        <img src="/img/portfolio/works/1.jpg" alt="Creativity Demand" />
+                        <Image src="/img/portfolio/works/1.jpg" alt="Creativity Demand" width={800} height={600} />
                         <div className="item-img-overlay valign">
                           <div className="cont text-center">
                             <h6>Creativity Demand</h6>
@@ -87,7 +88,7 @@ const Home = () => {
                   <div className="item-img wow fadeInUp" data-wow-delay=".4s">
                     <Link href="/project-details/project-details-dark" passHref>
                       <a className="img-link">
-                        <img src="/img/portfolio/works/2.jpg" alt="Through The Breaking" />
+                        <Image src="/img/portfolio/works/2.jpg" alt="Through The Breaking" width={800} height={600} />
                         <div className="item-img-overlay valign">
                           <div className="cont text-center">
                             <h6>Through The Breaking</h6>
@@ -103,7 +104,7 @@ const Home = () => {
                   <div className="item-img wow fadeInUp" data-wow-delay=".4s">
                     <Link href="/project-details/project-details-dark" passHref>
                       <a className="img-link">
-                        <img src="/img/portfolio/works/3.jpg" alt="Create With Creatives" />
+                        <Image src="/img/portfolio/works/3.jpg" alt="Create With Creatives" width={800} height={600} />
                         <div className="item-img-overlay valign">
                           <div className="cont text-center">
                             <h6>Create With Creatives</h6>

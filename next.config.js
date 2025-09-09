@@ -2,14 +2,12 @@ const path = require("path");
 
 module.exports = {
   reactStrictMode: true,
-  sassOptions: {
-    includePaths: [path.join(__dirname, "css")],
-  },
   trailingSlash: true,
-  devIndicators: {
-    buildActivity: false,
+  images: {
+    unoptimized: true,
   },
-  eslint: {
-    ignoreDuringBuilds: false,
-  },
+  webpack: (config) => {
+    config.resolve.fallback = { fs: false };
+    return config;
+  }
 };

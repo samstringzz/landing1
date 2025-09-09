@@ -14,6 +14,7 @@ const LightTheme = ({ children, bdOn }) => {
   return (
     <>
       <Head>
+        <link rel="stylesheet" href="/css/bootstrap.min.css" />
         <link rel="stylesheet" href="/css/light.css" />
       </Head>
       {children}

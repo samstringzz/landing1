@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Products = () => {
   const products = [
@@ -39,7 +40,7 @@ const Products = () => {
         <div key={product.id} className="col-lg-3 col-md-6">
           <div className="item-box">
             <div className="img">
-              <img src={product.image} alt={product.title} />
+              <Image src={product.image} alt={product.title} width={800} height={600} />
               <div className="rating">
                 <i className="fas fa-star"></i>
                 <span>{product.rating}</span>

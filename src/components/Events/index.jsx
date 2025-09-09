@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Events = () => {
   const events = [
@@ -38,7 +39,7 @@ const Events = () => {
         <div key={event.id} className="col-lg-4">
           <div className="item-box">
             <div className="img">
-              <img src={event.image} alt={event.title} />
+              <Image src={event.image} alt={event.title} width={800} height={600} />
             </div>
             <div className="cont">
               <div className="info">
