@@ -16,6 +16,9 @@ const LightTheme = ({ children, bdOn }) => {
       <Head>
         <link rel="stylesheet" href="/css/bootstrap.min.css" />
         <link rel="stylesheet" href="/css/light.css" />
+        <link rel="stylesheet" href="/css/animate.css" />
+        <link rel="stylesheet" href="/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="/css/pe-icon.min.css" />
       </Head>
       {children}
     </>

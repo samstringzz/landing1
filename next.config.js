@@ -1,4 +1,4 @@
-const path = require("path");
+const path = require('path');
 
 module.exports = {
   reactStrictMode: true,
@@ -6,29 +6,14 @@ module.exports = {
   images: {
     unoptimized: true,
   },
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
+  },
   webpack: (config) => {
-    // Remove any existing CSS rules
-    config.module.rules = config.module.rules.filter(
-      (rule) => !(rule.test && rule.test.test('.css'))
-    );
-
-    // Add our own CSS rules
     config.module.rules.push({
       test: /\.css$/,
-      use: [
-        'next/dist/compiled/css-loader',
-        {
-          loader: 'postcss-loader',
-          options: {
-            postcssOptions: {
-              plugins: ['postcss-preset-env'],
-            },
-          },
-        },
-      ],
+      use: ['style-loader', 'css-loader'],
     });
-
-    config.resolve.fallback = { fs: false };
     return config;
   }
 };
