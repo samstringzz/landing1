@@ -46,8 +46,8 @@ importers:
         version: 7.4.1
     devDependencies:
       css-loader:
-        specifier: ^7.1.2
-        version: 7.1.2(webpack@5.101.3)
+        specifier: ^6.8.1
+        version: 6.8.1(webpack@5.101.3)
       eslint:
         specifier: 8.6.0
         version: 8.6.0
@@ -1051,17 +1051,11 @@ packages:
     peerDependencies:
       postcss: ^8.4
 
-  css-loader@7.1.2:
-    resolution: {integrity: sha512-6WvYYn7l/XEGN8Xu2vWFt9nVzrCn39vKyTEFf/ExEyoksJjjSZV/0/35XPlMbpnr6VGhZIUg5yJrL8tGfes/FA==}
-    engines: {node: '>= 18.12.0'}
+  css-loader@6.8.1:
+    resolution: {integrity: sha512-xDAXtEVGlD0gJ07iclwWVkLoZOpEvAWaSyf6W18S2pOC//K8+qUDIx8IIT3D+HjnmkJPQeesOPv5aiUaJsCM2g==}
+    engines: {node: '>= 12.13.0'}
     peerDependencies:
-      '@rspack/core': 0.x || 1.x
-      webpack: ^5.27.0
-    peerDependenciesMeta:
-      '@rspack/core':
-        optional: true
-      webpack:
-        optional: true
+      webpack: ^5.0.0
 
   css-prefers-color-scheme@10.0.0:
     resolution: {integrity: sha512-VCtXZAWivRglTZditUfB4StnsWr6YVZ2PRtuxQLKTNRdtAf8tpzaVPE9zXIF3VaSc7O70iK/j1+NXxyQCqdPjQ==}
@@ -4079,7 +4073,7 @@ snapshots:
       postcss-selector-parser: 7.1.0
       postcss-value-parser: 4.2.0
 
-  css-loader@7.1.2(webpack@5.101.3):
+  css-loader@6.8.1(webpack@5.101.3):
     dependencies:
       icss-utils: 5.1.0(postcss@8.5.6)
       postcss: 8.5.6
@@ -4089,7 +4083,6 @@ snapshots:
       postcss-modules-values: 4.0.0(postcss@8.5.6)
       postcss-value-parser: 4.2.0
       semver: 7.7.2
-    optionalDependencies:
       webpack: 5.101.3
 
   css-prefers-color-scheme@10.0.0(postcss@8.5.6):
