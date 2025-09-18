@@ -132,13 +132,70 @@ const Home = () => {
         </section>
 
         {/* Tagline Section */}
-        <section className="tagline section-padding bg-img parallaxie" style={{ backgroundImage: "url('/img/slid/1.jpg')" }}>
+        <section className="tagline section-padding" style={{ 
+          background: 'linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%)',
+          minHeight: '400px'
+        }}>
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-8 col-md-10">
                 <div className="text-center">
-                  <h4 className="playfont mb-15">Empowering entrepreneurs to build brands they love</h4>
-                  <p>Turning your vision into reality through creative excellence and strategic innovation.</p>
+                  <h1 className="mb-4" style={{ 
+                    fontSize: '3rem', 
+                    fontWeight: 'bold', 
+                    color: '#6f42c1',
+                    letterSpacing: '2px'
+                  }}>
+                    TAGLINE
+                  </h1>
+                  <h4 className="playfont mb-4" style={{ 
+                    color: '#fd7e14',
+                    fontSize: '1.5rem',
+                    fontWeight: '500'
+                  }}>
+                    Empowering entrepreneurs to build brands they love
+                  </h4>
+                  <h3 className="mb-5" style={{ 
+                    color: '#000',
+                    fontWeight: 'bold',
+                    fontSize: '1.8rem'
+                  }}>
+                    Content Hub
+                  </h3>
+                  <div className="social-icons d-flex justify-content-center gap-4">
+                    <a href="#" className="social-icon" style={{
+                      width: '60px',
+                      height: '60px',
+                      borderRadius: '50%',
+                      border: '2px solid #000',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      textDecoration: 'none',
+                      transition: 'all 0.3s ease'
+                    }}>
+                      <i className="fab fa-instagram" style={{ 
+                        fontSize: '24px', 
+                        color: '#000' 
+                      }}></i>
+                    </a>
+                    <a href="#" className="social-icon" style={{
+                      width: '60px',
+                      height: '60px',
+                      borderRadius: '50%',
+                      border: '2px solid #000',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      textDecoration: 'none',
+                      transition: 'all 0.3s ease'
+                    }}>
+                      <i className="fab fa-youtube" style={{ 
+                        fontSize: '24px', 
+                        color: '#000' 
+                      }}></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
