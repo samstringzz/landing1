@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
 import SwiperCore, { Navigation, Pagination, Parallax, Autoplay } from "swiper";
 
-import "swiper/swiper.min.css";
+import "swiper/css";
 import Split from "../Split";
 import fadeWhenScroll from "../../common/fadeWhenScroll";
 import removeSlashFromPagination from "../../common/removeSlashFromPagination";
